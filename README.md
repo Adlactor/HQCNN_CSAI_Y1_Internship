@@ -62,7 +62,7 @@ python precompute_eneqr.py
 2. Splits each 28×28 image into 2×2 patches (stride=2 by default).
 3. Encodes each patch via the ENEQR PennyLane encoder into a vector of length **wires** (default q=4).
 4. Stores `states` (shape `[N, nrow, ncol, wires]`) and `labels` in `eneqr_states.h5`.
-  # NOTE: for V1-3, you need to precompute the dataset by modifying q=2 instead of 4, for V4 keep q=4. (- Mahmoud Sallam)
+  * NOTE: for V1-3, you need to precompute the dataset by modifying q=2 instead of 4, for V4 keep q=4. (- Mahmoud Sallam)
 
 After completion, you will see:
 
@@ -133,6 +133,7 @@ If you prefer to use the classical MNIST pipeline (without quantum encoding):
 * **GPU fallback**: If no CUDA, code runs on CPU automatically.
 * **Dependencies**: Ensure all packages are installed in the same environment 
 
-* **M S Notes**
+## Addendum Notes - Mahmoud:
 * **Dependencies Note #02:**: Ensure the versions of all dependencies follow that of the **Prerequisites**, this can be checked with `pip list`.
 * **Tensorboard Event File Access**: Initiate Command Prompt and run `tensorboard --logdir_spec [Folder Address directly from c:/] --port 6040` then boot up [http://localhost:6040](http://localhost:6040), If that doesn't work, create a new folder and relocate the .0 file there, then copy the folder address and use that when initiating tensorboard via CMD Prompt.
+

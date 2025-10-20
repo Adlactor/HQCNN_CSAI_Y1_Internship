@@ -28,14 +28,14 @@ Hybrid Quantum-Classical Convolutional Neural Network (HQCNN) for image classifi
 
 **Install required packages and specific versions:**
 
-Ensure that all the packages are installed and on your python client and ensure that the python client which possesses all the required packages is the one executing the program, this is a known issue if you possess more than one python interpreter (Anaconda, Python3.12, Pycharm, JupyterLab, etc.)
+Ensure that all packages are installed on your Python client and that the Python client possessing all the required packages is the one executing the program. This is a known issue if you have more than one Python interpreter (e.g., Anaconda, Python 3.12, PyCharm, JupyterLab, etc.).
 
 ```bash
 pip install \
   torch==2.5.1+cu124 \
   torchvision==0.20.1+cu124 \
   pennylane==0.40.0 \
-  qiskit==1.3.0 \                 // Added by Mahmoud Sallam, note that the "convert_to_target" function is deprecated from 1.3 onwards and is removed from 2.0 onwards as per
+  qiskit==1.3.0 \                 // Added by Mahmoud Sallam, note that the "convert_to_target" function is deprecated from 1.3 onwards and is removed from 2.0 onwards as per 
                                   // https://quantum.cloud.ibm.com/docs/en/api/qiskit/1.4/qiskit.providers.convert_to_target
   qiskit-aer==0.16.0 \
   h5py==3.12.1 \
@@ -62,7 +62,7 @@ python precompute_eneqr.py
 2. Splits each 28×28 image into 2×2 patches (stride=2 by default).
 3. Encodes each patch via the ENEQR PennyLane encoder into a vector of length **wires** (default q=4).
 4. Stores `states` (shape `[N, nrow, ncol, wires]`) and `labels` in `eneqr_states.h5`.
-  * NOTE: for V1-3, you need to precompute the dataset by modifying q=2 instead of 4, for V4 keep q=4. (- Mahmoud Sallam)
+  * NOTE: for V1-3, you need to precompute the dataset by modifying q=2 instead of 4, for V4 keep q=4.
 
 After completion, you will see:
 
@@ -133,7 +133,8 @@ If you prefer to use the classical MNIST pipeline (without quantum encoding):
 * **GPU fallback**: If no CUDA, code runs on CPU automatically.
 * **Dependencies**: Ensure all packages are installed in the same environment 
 
-## Addendum Notes - Mahmoud:
-* **Dependencies Note #02:**: Ensure the versions of all dependencies follow that of the **Prerequisites**, this can be checked with `pip list`.
+## Addendum Notes - M S:
+* **Dependencies Note #02:** Ensure the versions of all dependencies follow that of the **Prerequisites**, this can be checked with `pip list`.
 * **Tensorboard Event File Access**: Initiate Command Prompt and run `tensorboard --logdir_spec [Folder Address directly from c:/] --port 6040` then boot up [http://localhost:6040](http://localhost:6040), If that doesn't work, create a new folder and relocate the .0 file there, then copy the folder address and use that when initiating tensorboard via CMD Prompt.
+
 

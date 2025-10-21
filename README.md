@@ -44,7 +44,7 @@ pip install \
   torch==2.5.1+cu124 \
   torchvision==0.20.1+cu124 \
   pennylane==0.40.0 \
-  qiskit==1.3.0 \                 // Added by Mahmoud Sallam, note that the "convert_to_target" function is deprecated from 1.3 onwards and is removed from 2.0 onwards as per 
+  qiskit==1.3.0 \                 // Note that the "convert_to_target" function is deprecated from 1.3 onwards and is removed from 2.0 onwards as per 
                                   // https://quantum.cloud.ibm.com/docs/en/api/qiskit/1.4/qiskit.providers.convert_to_target
   qiskit-aer==0.16.0 \
   h5py==3.12.1 \
@@ -145,6 +145,7 @@ If you prefer to use the classical MNIST pipeline (without quantum encoding):
 ## Addendum Notes - M S:
 * **Dependencies Note #02:** Ensure the versions of all dependencies follow that of the **Prerequisites**, this can be checked with `pip list`.
 * **Tensorboard Event File Access**: Initiate Command Prompt and run `tensorboard --logdir_spec [Folder Address directly from c:/] --port 6040` then boot up [http://localhost:6040](http://localhost:6040), If that doesn't work, create a new folder and relocate the .0 file there, then copy the folder address and use that when initiating tensorboard via CMD Prompt.
+
 
 
 

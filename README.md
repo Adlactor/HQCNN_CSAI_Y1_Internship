@@ -7,7 +7,6 @@ I intend to further the progress in this project at a later date to fulfil goals
 - Analysis of other datasets, such as CIFAR-10.
 - Research & development of improvements on the pre-existing HQCNN model.
 - Performing more exhaustive testing, which includes increasing the epoch value.
-- Upload of the Initial FYP document.
 
 
 ## Project Overview
@@ -146,6 +145,7 @@ If you prefer to use the classical MNIST pipeline (without quantum encoding):
 ## Addendum Notes - M S:
 * **Dependencies Note #02:** Ensure the versions of all dependencies follow that of the **Prerequisites**, this can be checked with `pip list`.
 * **Tensorboard Event File Access**: Initiate Command Prompt and run `tensorboard --logdir_spec [Folder Address directly from c:/] --port 6040` then boot up [http://localhost:6040](http://localhost:6040), If that doesn't work, create a new folder and relocate the .0 file there, then copy the folder address and use that when initiating tensorboard via CMD Prompt.
+
 
 
 

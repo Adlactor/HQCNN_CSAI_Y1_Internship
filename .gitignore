@@ -1,8 +1,4 @@
-# Ignore Published Books
+# Ignore Published Books & FYP [Compartmentalized Access]
 Quantum Computation and Quantum information.pdf
-
-
-# Ignore Git Files
-.gitignore
-.gitattributes
+HooKaiPing-FYPReport.pdf
 

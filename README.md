@@ -1,6 +1,8 @@
 # HQCNN with Quanvolutional Encoding
 ## Internship Preamble
 
+> All credits towards the initial codebase and dissertation are fully attributed to Mr. Hoo Kai Ping.
+
 This is a Summer Internship Project related to the analysis, understanding, and review of Hybrid Quantum Convolutional Neural Networks, which was a Final Year Project operated by Hoo Kai Ping. This Internship was sanctioned by Dr. Tan Chye Cheah and operated by myself. My work focuses on replicating the results of the HQCNN and verifying their integrity while structuring the review to allow undergraduate students to get a foothold on Quantum Convolutional Neural Networks and Quantum Encoding.
 
 I intend to further the progress in this project at a later date to fulfil goals set in the reflection section of the review, which include:
@@ -145,6 +147,7 @@ If you prefer to use the classical MNIST pipeline (without quantum encoding):
 ## Addendum Notes - M S:
 * **Dependencies Note #02:** Ensure the versions of all dependencies follow that of the **Prerequisites**, this can be checked with `pip list`.
 * **Tensorboard Event File Access**: Initiate Command Prompt and run `tensorboard --logdir_spec [Folder Address directly from c:/] --port 6040` then boot up [http://localhost:6040](http://localhost:6040), If that doesn't work, create a new folder and relocate the .0 file there, then copy the folder address and use that when initiating tensorboard via CMD Prompt.
+
 
 
 
